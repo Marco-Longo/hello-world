@@ -14,7 +14,7 @@
 <style>
 h3 {color: blue;}
 
-span.classe {
+.classe {
     background-color:yellow;
     color:black;
     font-size:150%;
@@ -25,7 +25,7 @@ span.classe {
 
 <meta name="viewport" content="device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+<meta charset="UTF-8"> <!-- di default -->
 
 <meta name="description" content="Pagina di prova">
 
@@ -216,6 +216,42 @@ And this one <span class="classe">as well</span>
 
 <img src="https://www.w3schools.com/html/img_girl.jpg" style="max-width:100%; height:auto">
 
+<picture> 
+    <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width:600px)">
+    <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width:1500px)">
+    <source srcset="https://www.w3schools.com/html/flowers.jpg">
+
+<img src="https://www.w3schools.com/html/img_smallflower.jpg" alt="flower" style="float:right">
+</picture>
+
+<h1 style="font-size:10vw">Scaling Text: Coding</h1>
+
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+<p>If you input wrong value, the program will return <samp>Error!</samp></p>
+
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code> <!-- non mantiene spazi o line-breaks. Si può ovviare inserendo l'elemento <code> in un elemento <pre> -->
+<br>
+
+Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+
+<p>
+Some symbols are reserved to HTML and cannot be written as they are. You have to use an entity symbol instead, like this &lt, &#60
+A common character entity used in HTML is the non-breaking space: two words separated by "&nbsp" will not separate even if within a br.
+</p> <!-- Si usa solo & per il nome del simbolo (e.g. lt = lower than) oppure &# per il numero del simbolo -->
+<hr>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -254,7 +290,7 @@ And this one <span class="classe">as well</span>
 <address>
 <pre style="text-align:right">
 Written by: Marco Longo
-Paterno'
+Paterno&#768
 Italy
 </pre>
 </address>
