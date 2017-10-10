@@ -246,8 +246,127 @@ A common character entity used in HTML is the non-breaking space: two words sepa
 
 <!-- HTML Forms -->
 
+<form action="https://www.youtube.com/" method="post" target="_blank"> <!-- method get è di default -->
 
+<fieldset>
+    <legend>Anagrafica</legend>
+    <label>Nome e Cognome: </label> <br>
+    <input type="text"> <br>
+</fieldset>
 
+<input type="radio" name="gender" value="Male">Male <br>
+<input type="radio" name="gender" value="Female">Female <br>
+<!-- l'attributo name è essenziale per inviare i dati attraverso il submit -->
+
+<input type="submit" value="Send"> <br>
+
+</form> <br>
+
+<form>
+
+<select>
+    <option value="Hanzo">Hanzo</option>
+    <option value="Genji" selected>Genji</option>
+    <option value="Reaper">Reaper</option>
+    <option value="D.va">D.va</option>
+</select> <br>
+
+<textarea name="message" rows="10" cols="50">
+Write something here
+</textarea> <br>
+
+<button type="button" onclick="alert('Hello world!')">
+Click here!
+</button> <br>
+
+<input list="lista">
+    <datalist id="lista">
+	<option value="Scelta 1">Scelta 1</option>
+	<option value="Scelta 2">Scelta 2</option>
+	<option value="Scelta 3">Scelta 3</option>
+    </datalist>
+
+</form> <br>
+
+<form>
+
+<label>Password:</label> <br>
+<input type="password" required>
+<input type="reset"> <br><br>
+
+Scegli una o più opzioni: <br>
+<input type="checkbox" name="Opzioni" value="Opzione 1">Opzione1 <br>
+<input type="checkbox" name="Opzioni" value="Opzione 2">Opzione2 <br>
+
+Select your favorite color: <br>
+<input type="color" name="favcolor" value="#ffffff"> <br>
+
+Insert your birth date: <br>
+<input type="date" name="bday" max="31-12-1990"> <br>
+
+Local date & time:
+<input type="datetime-local" name="DataOra"> <br>
+
+Insert your e-mail:
+<input type="email" name="email"> <br>
+
+Insert month and year:
+<input type="month" name="MonthYear"> <br>
+
+Insert a number:
+<input type="number" name="number" value="50" max="100" step="10"> <br>
+0<input type="range" name="points" min="0" max="10">10 <br>
+
+Search on Google: <br>
+<input type="search" name="googlesearch" size="100"> <br>
+
+Insert time:
+<input type="time" name="Ora"> <br>
+
+Search URL:
+<input type="url" name="url"> <br>
+
+Insert week and year:
+<input type="week" name="WeekYear"> <br><br>
+
+</form>
+
+<!-- Attributes -->
+
+<form id="form1">
+
+<input type="text" name="testo" value="Solo lettura" readonly>
+<input type="text" name="testo" value="Disabilitata" disabled>
+<br>
+
+Massima lunghezza 5: <br>
+<input type="text" name="testo1" maxlength="5"> <br>
+
+Autocompletamento disattivato: <br>
+<input type="email" name="email1" autocomplete="off" autofocus> <br>
+
+</form>
+
+Fa ancora parte del form, ma nel codice sta fuori: <br>
+<input type="text" form="form1"> <br><br>
+
+<form action="http://www.surrenderat20.net/">
+
+Formaction: <br>
+<input type="submit" formaction="http://www.wordreference.com/">
+<input type="image" name="submitImmagine"> <br> <br>
+<!-- The formaction attribute overrides the form's "action" attribute. Simile per formenctype, che regola la formattazione dei dati inviati, per formmethod, che regola il metodo di invio dei dati (get o post), e per formtarget, che regola la visualizzazione dell'action sulla stessa pagina o su una nuova scheda (_self o _blank) -->
+
+Vai: <br>
+<input type="image" src="https://www.w3schools.com/html/img_submit.gif" alt="submit" width="40" height="40"> <br>
+
+Scegli uno o più file: <br>
+<input type="file" name="image" multiple> <br> <br>
+
+Inserisci gmail: <br>
+<input type="email" name="email2" placeholder="es. mariorossi@gmail.com">
+
+</form>
 
 
 
