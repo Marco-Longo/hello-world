@@ -11,14 +11,14 @@ h1 {
 p {
     color: yellow;
     border: 2px solid red;
-    padding: 30px; <!-- Definisce lo spazio tra il bordo e il testo  	 --> 
-    margin: 30px; <!-- Definisce lo spazio tra il bordo e il margine 	 di pagina --> 
+    padding: 30px; /* Definisce lo spazio tra il bordo e il testo */ 
+    margin: 30px; /* Definisce lo spazio tra il bordo e il margine  	di pagina */
 }
 
 #p01 {
-    color: green;
+    color: green; /* Un id non può iniziare con un numero */
 }
 
-p.quotes {
+p.quotes { /* Classe "quotes" dei paragrafi. Il nome di una classe non può iniziare con un numero. Un elemento HTML può fare riferimento a più classi: <p class="class1 class2">. */
     color: gray;
 }
