@@ -1,0 +1,24 @@
+body {
+    background-color: blue;
+}
+
+h1 {
+    color: red;
+    font-family: verdana;
+    font-size: 200%;
+}
+
+p {
+    color: yellow;
+    border: 2px solid red;
+    padding: 30px; <!-- Definisce lo spazio tra il bordo e il testo  	 --> 
+    margin: 30px; <!-- Definisce lo spazio tra il bordo e il margine 	 di pagina --> 
+}
+
+#p01 {
+    color: green;
+}
+
+p.quotes {
+    color: gray;
+}
