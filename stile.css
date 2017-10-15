@@ -17,8 +17,51 @@ p {
 
 #p01 {
     color: green; /* Un id non può iniziare con un numero */
+    text-align: center;
+}
+
+.quotes {
+    background-color: blue; /* fa riferimento a tutti gli elementi HTML di classe "quotes" */
 }
 
 p.quotes { /* Classe "quotes" dei paragrafi. Il nome di una classe non può iniziare con un numero. Un elemento HTML può fare riferimento a più classi: <p class="class1 class2">. */
     color: gray;
 }
+
+h2, h3, h4 { 
+    background-image: url("https://image.freepik.com/free-psd/abstract-background-design_1297-82.jpg");
+    background-repeat: no-repeat; /* di default le immagini di sfondo si ripetono sia orizzontalmente (repeat-x) che verticalmente  (repeat-y). Si può evitare la ripetizione dell'immagine con il valore: no-repeat. */
+    background-position: right top; /* se l'immagine di sfondo non viene ripetuta (no-repeat) si può modificare la sua posizione in modo tale da non disturbare la lettura di eventuali altri elementi */
+    background-attachment: fixed; /* Avoids the background to scroll with the rest of the page */
+}
+
+/* Nei casi di dichiarazioni di più stili per lo stesso elemento, gli stili inline hanno priorità maggiore rispetto agli stylesheets interni o esterni, i quali invece si sovrascrivono a vicenda (l'ultimo elencato all'interno dell'elemento <head> sarà quello considerato) */
+
+h5 {
+    background: #333333 url("sfondo.jpg") no-repeat left top; /* Shorthand property: color - image - repeat - position
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
